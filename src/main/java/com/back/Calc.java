@@ -19,6 +19,13 @@ public class Calc {
             return run(exp[0]) - run(exp[1]);
         }
 
+        int mul = expression.indexOf("*");
+        if(mul != -1) {
+            exp[0] = expression.substring(0, mul).trim();
+            exp[1] = expression.substring(mul + 1).trim();
+            return run(exp[0]) * run(exp[1]);
+        }
+
         return Integer.parseInt(expression);
     }
 }
