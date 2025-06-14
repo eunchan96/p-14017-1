@@ -12,7 +12,7 @@ public class Calc {
             return run(exp[0]) + run(exp[1]);
         }
 
-        int sub = expression.indexOf("-");
+        int sub = expression.lastIndexOf("-");
         if(sub != -1){
             exp[0] = expression.substring(0, sub).trim();
             exp[1] = expression.substring(sub + 1).trim();
