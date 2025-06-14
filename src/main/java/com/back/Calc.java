@@ -9,7 +9,7 @@ public class Calc {
         if(add != -1) {
             exp[0] = expression.substring(0, add).trim();
             exp[1] = expression.substring(add + 1).trim();
-            return Integer.parseInt(exp[0]) + Integer.parseInt(exp[1]);
+            return run(exp[0]) + run(exp[1]);
         }
 
         int sub = expression.indexOf("-");
