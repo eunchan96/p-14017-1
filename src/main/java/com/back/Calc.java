@@ -16,7 +16,7 @@ public class Calc {
         if(sub != -1){
             exp[0] = expression.substring(0, sub).trim();
             exp[1] = expression.substring(sub + 1).trim();
-            return Integer.parseInt(exp[0]) - Integer.parseInt(exp[1]);
+            return run(exp[0]) - run(exp[1]);
         }
 
         return Integer.parseInt(expression);
